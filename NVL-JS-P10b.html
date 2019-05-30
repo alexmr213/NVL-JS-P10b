@@ -7,11 +7,30 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <script>
-       
-           
-           for(var i=0;i<50;i++){
-            document.write(Math.floor((Math.random() * 100))+"<br>");       
-           }
+      
+var pares=[];
+var impares=[];
+
+for(var i=0;i<50;i++){
+    let num = Math.floor((Math.random()*100)+1);
+    console.log (num);
+    document.write( num + " / ");
+    if(num%2==0){
+      pares.push(num);
+     
+    }
+else{
+    impares.push(num);
+     
+}
+}
+console.log(pares);
+console.log(impares);
+
+document.write("<hr>"+"Los números pares de la cadena son: "+pares)
+document.write("<hr>"+"Los números impares de la cadena son: "+impares)
+
+
 
     </script>
 </head>
